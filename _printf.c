@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdarg.h> /* Add it directly here to test */
+#include <stdarg.h> 
 
 int _printf(const char *format, ...)
 {
@@ -12,13 +12,15 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 	while (format[i])
 	{
-		if (format[i] == '%')
+	if (format[i] == '%')
 		{
 			i++;
 			if (format[i] == 'c')
 				count += print_char(args);
 			else if (format[i] == 's')
 				count += print_string(args);
+			else if (format[i] == 'd' || format[i] == 'i') /* <-- ADD THIS */
+				count += print_int(args);                  /* <-- ADD THIS */
 			else if (format[i] == '%')
 				count += _putchar('%');
 			else if (format[i] == '\0')
@@ -28,6 +30,7 @@ int _printf(const char *format, ...)
 				count += _putchar('%');
 				count += _putchar(format[i]);
 			}
+		}
 		}
 		else
 			count += _putchar(format[i]);
