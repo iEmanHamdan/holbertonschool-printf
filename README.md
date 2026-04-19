@@ -18,6 +18,15 @@ This project demonstrates proficiency in the following C programming concepts:
 * **Style:** Code formatted in strict adherence to the **Betty** style guide.
 * **Constraints:** No global variables used. No more than 5 functions per file.
 
+## Files 
+The repository contains the following files, each handling a specific piece of the architecture: 
+| File | Description | 
+| :--- | :--- | 
+| **`main.h`** | The header file containing all function prototypes and the core `fmt_t` structure. | 
+| **`_printf.c`** | The main engine that parses the format string and routes specifiers. | 
+| **`functions.c`** | Contains the worker functions (`print_char`, `print_string`, `print_int`) that process and format the arguments. | 
+| **`man_3_printf`** | The manual page providing detailed documentation on how to use the function. | 
+
 ## Conversion Specifiers
 Our `_printf` function handles the following conversion specifiers:
 
