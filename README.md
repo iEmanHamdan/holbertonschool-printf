@@ -35,6 +35,10 @@ To compile the library alongside your own `main.c` file, use the following comma
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o _printf
 ````
 
+## Flowchart 
+<img width="1956" height="2043" alt="My First Board (2)" src="https://github.com/user-attachments/assets/d385d36b-8506-4758-906d-03b8f2903a88" />
+
+
 ## Usage Example
 
 Include the custom header file in your C programs to use the function:
