@@ -49,10 +49,9 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o _printf
 
 
 ## Usage Example
-
 Include the custom header file in your C programs to use the function:
 
-```c
+```
 #include "main.h"
 
 int main(void)
@@ -63,7 +62,15 @@ int main(void)
     
     return (0);
 }
-```
+````
+
+## Expected Outcomes for the Example
+When you compile and run the example code provided above, the output to the standard output stream will be exactly:
+
+
+Hello World!
+Printing a character: H
+Score: 100%
 
 ## Testing
 
